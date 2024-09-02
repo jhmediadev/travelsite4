@@ -1,0 +1,11 @@
+.generic-content-container {
+  p {
+    line-height: 1.48;
+    font-size: 1.12rem;
+    margin: 1.4rem 0;
+  }
+
+  p a {
+    font-weight: 700;
+  }
+}

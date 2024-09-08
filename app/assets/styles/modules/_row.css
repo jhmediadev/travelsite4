@@ -2,6 +2,10 @@
   @mixin clearfix {
   }
 
+  &--t-padding {
+    margin-top: 160px;
+  }
+
   &--gutters {
     margin-right: -65px;
   }
@@ -16,6 +20,10 @@
 
   &--gutters-large > div {
     padding-right: 100px;
+  }
+
+  &--gutters-small > div {
+    padding-right: 45px;
   }
 
   &__b-margin-until-med {
@@ -40,6 +48,18 @@
     &__medium-8 {
       float: left;
       width: 66.6%;
+    }
+  }
+
+  /* Begin equal height rule*/
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 }
